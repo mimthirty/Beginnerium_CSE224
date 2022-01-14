@@ -38,8 +38,10 @@ firebase.database().ref('User/'+ name).once('value').then(function(snapshot) {
                 }
         }, function(error) {
             if (error) {
+              alert("failed");
 
             } else {
+              alert("search done");
 
             }
           });
